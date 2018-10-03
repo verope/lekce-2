@@ -1,3 +1,8 @@
+<?php
+$jmeno = 'Kamila';
+$number = 5;
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -56,13 +61,56 @@
       <div class="starter-template">
         <h1>
 <?php
-  echo 'Centrální obrazovka všehomíra';
+
+if ($jmeno == 'Veronika') {
+    echo "Cau $jmeno";
+} else {
+    echo "Dobry den $jmeno";
+}
+
+
 
 ?>
         </h1>
         <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
       </div>
 
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Cislo</th>
+      <th scope="col">Soucin</th>
+      <th scope="col">Soucet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+      <?php echo $number ?>
+      </td>
+      <td>      
+      <?php
+      $a = 1;
+      $b = 1;
+      while ($a < $number) {
+          $b = $b * ($a + 1);
+          $a = $a + 1;
+      } echo $b;
+      ?>
+      </td>
+      <td>
+      <?php
+      $c = 1;
+      $d = 1;
+      while ($c < $number) {
+          $d = $d + ($c + 1);
+          $c = $c + 1;
+      } echo $d;
+      ?>
+      </td>
+    </tr>
+  </tbody>
+</table>
     </main><!-- /.container -->
 
     <!-- Bootstrap core JavaScript
