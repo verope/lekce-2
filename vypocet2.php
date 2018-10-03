@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -30,7 +29,7 @@
             <a class="nav-link" href="/lekce-2/pythagoras.php">Spocti obsah trojuhelniku<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/lekce-2/pythagoras2.php">Spocti obsah obdelniku!</a>
+            <a class="nav-link" href="/lekce-2/pythagoras2.php">Spoceti obsah obdelniku</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="/lekce-2/delkazivota.php">Spocti svou delku zivota</a>
@@ -54,31 +53,49 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>Spocti treba obsah trojuhelniku!</h1>
-        <p class="lead">Hele proste jenom zadej uhel u vysky a delku prepony.<br>A mas to!</p>
+        <h1>Spocetls obsah obdelniku!</h1>
+        <p class="lead">Bravo!</p>
       </div>
-      <div "cointainer">
-    <form action="vypocet.php" method="post">
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom01">Delka prepony</label>
-          <input type="integer" class="form-control" id="validationCustom01" placeholder="Delka prepony" name="delka" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="validationCustom02">Uhel u vysky</label>
-          <input type="integer" class="form-control" id="validationCustom02" placeholder="Uhel u vysky" name="uhel" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-      <button class="btn btn-primary" type="submit">Submit form</button>
-    </form>
+
+<?php
+$obdelnikObsah = $_POST['stranaA'] * $_POST['stranaB'];
+?>
+<hr></hr>
+<p>Tve zadani:</p>
+<hr></hr>
+<div class="container">
+  <div class="row">
+    <div class="col">
+ 
+<?php
+echo "<h2>Strana a: " . $_POST['stranaA'] . " cm</h2>";
+?>
+
+    </div>
+    <div class="col">
+<?php
+echo "<h2>Strana b: " . $_POST['stranaB'] . " cm</h2>";
+?>
+    </div>
+  </div>
+</div>
+<hr></hr>
+<p>Vysledek:</p>
+<hr></hr>
+<div class="container">
+  <div class="row">
+      <div class="col">
+<?php
+echo "<br>";
+
+echo "<h1>Obdelnik o straně délky a = " . $_POST['stranaA'] . " cm a strany b = " . $_POST['stranaB'] . " cm je $obdelnikObsah cm2</h1>";
+?>
+
+      </div>
+      </div>
       </div>
 <hr></hr>
-<img src="/lekce-2/youcandoit.jpg" class="img-fluid" alt="Responsive image">
+<img src="/lekce-1/wohoo.jpg" class="img-fluid" alt="Responsive image">
 
     </main><!-- /.container -->
 

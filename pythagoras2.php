@@ -1,5 +1,3 @@
-
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,11 +24,11 @@
       
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/lekce-2/pythagoras.php">Spocti obsah trojuhelniku<span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="/lekce-2/pythagoras2.php">Spocti obsah obdelniku!</a>
+            <a class="nav-link" href="/lekce-2/pythagoras.php">Spocti obsah trojuhelniku</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/lekce-2/pythagoras2.php">Spocti obsah obdelniku<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="/lekce-2/delkazivota.php">Spocti svou delku zivota</a>
@@ -54,22 +52,22 @@
     <main role="main" class="container">
 
       <div class="starter-template">
-        <h1>Spocti treba obsah trojuhelniku!</h1>
-        <p class="lead">Hele proste jenom zadej uhel u vysky a delku prepony.<br>A mas to!</p>
+        <h1>Spocti treba obsah obdelniku!</h1>
+        <p class="lead">Hele proste jenom zadej delku strany a a delku strany b.<br>A mas to!</p>
       </div>
       <div "cointainer">
-    <form action="vypocet.php" method="post">
+    <form action="vypocet2.php" method="post">
       <div class="form-row">
         <div class="col-md-6 mb-3">
-          <label for="validationCustom01">Delka prepony</label>
-          <input type="integer" class="form-control" id="validationCustom01" placeholder="Delka prepony" name="delka" required>
+          <label for="validationCustom01">Strana a</label>
+          <input type="integer" class="form-control" id="validationCustom01" placeholder="Strana a" name="stranaA" required>
           <div class="valid-feedback">
             Looks good!
           </div>
         </div>
         <div class="col-md-6 mb-3">
-          <label for="validationCustom02">Uhel u vysky</label>
-          <input type="integer" class="form-control" id="validationCustom02" placeholder="Uhel u vysky" name="uhel" required>
+          <label for="validationCustom02">Strana b</label>
+          <input type="integer" class="form-control" id="validationCustom02" placeholder="Strana b" name="stranaB" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -79,6 +77,7 @@
       </div>
 <hr></hr>
 <img src="/lekce-2/youcandoit.jpg" class="img-fluid" alt="Responsive image">
+
 
     </main><!-- /.container -->
 
