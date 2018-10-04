@@ -88,7 +88,7 @@ echo "<h2>Strana b: " . $_POST['stranaB'] . " cm</h2>";
 <?php
 echo "<br>";
 
-echo "<h1>Obdelnik o straně délky a = " . $_POST['stranaA'] . " cm a strany b = " . $_POST['stranaB'] . " cm je $obdelnikObsah cm2</h1>";
+echo "<h1>Obdelnik o straně délky a = " . $_POST['stranaA'] . " cm a strany b = " . $_POST['stranaB'] . " cm je " . round($obdelnikObsah) . " cm2</h1>";
 ?>
 
       </div>

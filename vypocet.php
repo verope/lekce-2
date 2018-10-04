@@ -96,7 +96,7 @@ echo "<h2>Vyska: " . round($vyska,2) . " cm</h2>";
 <?php
 echo "<br>";
 
-echo "<h1>Rovnostranný trojúhelník o straně délky " . $_POST['delka'] . " cm a úhlu " . $_POST['uhel'] . " stupňů má obsah $trojuhelnikObsah cm2.</h1>";
+echo "<h1>Rovnostranný trojúhelník o straně délky " . $_POST['delka'] . " cm a úhlu " . $_POST['uhel'] . " stupňů má obsah " . round($trojuhelnikObsah) . " cm2.</h1>";
 ?>
 
       </div>
